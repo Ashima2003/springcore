@@ -11,5 +11,8 @@ public class Test {
         System.out.println(s1);
         //registering shutdown hook it is there in abstract application context normal wale se nhi ho paaya
         context.registerShutdownHook();
+
+        Pepsi p1=(Pepsi) context.getBean("p1");
+        System.out.println(p1);
     }
 }
