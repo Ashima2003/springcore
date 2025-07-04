@@ -9,10 +9,15 @@
   http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config />
-    //ab iske naam se nhi frk pdta
-    <bean class="com.springcore.auto.wire.annotations.Address" name="address">
+<!--    ab iske naam se nhi frk pdta-->
+    <bean class="com.springcore.auto.wire.annotations.Address" name="address1">
         <property name="street" value="Temp Street" />
         <property name="city" value="Delhi"/>
+    </bean>
+
+    <bean class="com.springcore.auto.wire.annotations.Address" name="address2">
+        <property name="street" value="Second Street" />
+        <property name="city" value="Lucknow"/>
     </bean>
 
     <bean class="com.springcore.auto.wire.annotations.Employee" name="emp1" />

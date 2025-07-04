@@ -1,6 +1,7 @@
 package com.springcore.auto.wire.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
     @Override
@@ -10,6 +11,7 @@ public class Employee {
                 '}';
     }
     @Autowired
+    @Qualifier("address2")
     private Address address;
 
     public Employee(Address address) {
