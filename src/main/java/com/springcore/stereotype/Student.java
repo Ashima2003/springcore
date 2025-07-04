@@ -1,11 +1,13 @@
 package com.springcore.stereotype;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
+@Scope("prototype")
 //Component m bracket  lagke iska name change b kr skte h
 public class Student {
     @Value("Ashima Anand")
