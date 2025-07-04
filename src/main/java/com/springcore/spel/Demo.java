@@ -10,14 +10,8 @@ public class Demo {
     private int y;
     @Value("#{T(java.lang.Math).sqrt(25)}")
     private double z;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    @Value("#{8>3}")
+    private boolean isActive; //by default false
 
     @Override
     public String toString() {
@@ -25,9 +19,18 @@ public class Demo {
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
+                ", isActive=" + isActive +
                 ", name='" + name + '\'' +
                 ", e=" + e +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Value("#{new java.lang.String('Ashima Anand')}")
