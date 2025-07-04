@@ -8,5 +8,6 @@ public class Test {
         ApplicationContext con = new ClassPathXmlApplicationContext("stereoconfig.xml");
         Student student = con.getBean("student", Student.class);
         System.out.println(student);
+        System.out.println(student.getAddress());
     }
 }
