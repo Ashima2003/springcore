@@ -11,9 +11,9 @@ public class Test {
         Demo d1 = context.getBean("demo", Demo.class);
         System.out.println(d1);
 
-        SpelExpressionParser temp = new SpelExpressionParser();
-        Expression expression = temp.parseExpression("34+45");
-        System.out.println(expression.getValue());
+//        SpelExpressionParser temp = new SpelExpressionParser();
+//        Expression expression = temp.parseExpression("34+45");
+//        System.out.println(expression.getValue());
 
     }
 }
